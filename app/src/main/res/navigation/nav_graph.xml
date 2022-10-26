@@ -9,7 +9,7 @@
         android:id="@+id/firstFragment"
         android:name="com.example.applectureone.presentation.articles.ArticlesFragment"
         android:label="fragment_first"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_articles">
         <action
             android:id="@+id/toSecondFragment"
             app:destination="@id/secondFragment" />
