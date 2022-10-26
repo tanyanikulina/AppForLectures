@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AppLectureOne</string>
+    <string name="my_button">My button</string>
+    <string name="login_hint">Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
