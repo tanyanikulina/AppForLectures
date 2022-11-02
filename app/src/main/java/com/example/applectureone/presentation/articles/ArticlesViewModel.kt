@@ -1,5 +1,6 @@
 package com.example.applectureone.presentation.articles
 
+import android.content.Context
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -7,9 +8,9 @@ import com.example.applectureone.domain.ArticlesUseCase
 import com.example.applectureone.domain.model.ArticleModel
 import kotlinx.coroutines.launch
 
-class ArticlesViewModel : ViewModel() {
+class ArticlesViewModel(private val ctx: Context) : ViewModel() {
 
-    val useCase = ArticlesUseCase()
+    private val useCase = ArticlesUseCase(ctx)
 
     val isLoading = MutableLiveData<Boolean>()
     val articles = MutableLiveData<List<ArticleModel>>()

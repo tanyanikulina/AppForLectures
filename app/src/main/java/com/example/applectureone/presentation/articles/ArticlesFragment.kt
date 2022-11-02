@@ -23,7 +23,11 @@ class ArticlesFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        viewModel = ViewModelProvider(this).get(ArticlesViewModel::class.java)
+        viewModel = ViewModelProvider(
+            this, ArticlesViewModelFactory(
+                requireContext().applicationContext
+            )
+        ).get(ArticlesViewModel::class.java)
 
         binding = FragmentArticlesBinding.inflate(layoutInflater, container, false)
         return binding.root
@@ -37,8 +41,9 @@ class ArticlesFragment : Fragment() {
         }
 
         binding.rv.adapter = adapter
-        binding.btnGoToSecond.setOnClickListener {
-            findNavController().navigate(ArticlesFragmentDirections.toSecondFragment("some agrument"))
+        binding.btnGoToSettings.setOnClickListener {
+            findNavController().navigate(ArticlesFragmentDirections.toSettingsFragment())
+//            findNavController().navigate(ArticlesFragmentDirections.toSecondFragment("some agrument"))
         }
         binding.swipe.setOnRefreshListener {
             viewModel.reloadData()

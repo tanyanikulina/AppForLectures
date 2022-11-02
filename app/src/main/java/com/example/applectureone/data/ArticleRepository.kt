@@ -1,9 +1,13 @@
 package com.example.applectureone.data
 
+import android.content.Context
+import com.example.applectureone.data.local.SharedPrefs
 import com.example.applectureone.data.model.ArticleEntity
 import kotlinx.coroutines.delay
 
-class ArticleRepository {
+class ArticleRepository(private val context: Context) {
+
+    private val sPref = SharedPrefs(context)
 
     suspend fun getArticles(): List<ArticleEntity> {
         delay(1000)
@@ -42,6 +46,12 @@ class ArticleRepository {
             )
         )
         return list
+    }
+
+    fun getUserName(): String? = sPref.getUserName()
+
+    fun setUserName(name: String) {
+        sPref.setUserName(name)
     }
 
 }
