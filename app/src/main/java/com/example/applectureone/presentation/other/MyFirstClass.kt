@@ -1,4 +1,4 @@
-package com.example.applectureone
+package com.example.applectureone.presentation.other
 
 abstract class MyFirstClass(private var myVal: String?, myBool: Boolean, myInt: Int = 1) {
 

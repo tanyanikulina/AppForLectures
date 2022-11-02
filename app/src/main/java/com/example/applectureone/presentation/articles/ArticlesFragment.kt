@@ -45,6 +45,10 @@ class ArticlesFragment : Fragment() {
             findNavController().navigate(ArticlesFragmentDirections.toSettingsFragment())
 //            findNavController().navigate(ArticlesFragmentDirections.toSecondFragment("some agrument"))
         }
+        binding.btnGoToPermissions.setOnClickListener {
+            findNavController().navigate(ArticlesFragmentDirections.toPermissions())
+        }
+
         binding.swipe.setOnRefreshListener {
             viewModel.reloadData()
 //            binding.swipe.isRefreshing = false

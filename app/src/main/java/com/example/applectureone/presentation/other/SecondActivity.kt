@@ -1,10 +1,8 @@
-package com.example.applectureone
+package com.example.applectureone.presentation.other
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.applectureone.databinding.ActivitySecondBinding
-import com.example.applectureone.presentation.other.MyActionInterface
-import com.example.applectureone.presentation.other.ThirdFragment
 
 class SecondActivity : AppCompatActivity(), MyActionInterface {
 

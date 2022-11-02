@@ -2,7 +2,7 @@ package com.example.applectureone.domain
 
 import android.content.Context
 import com.example.applectureone.data.ArticleRepository
-import com.example.applectureone.data.model.ArticleEntity
+import com.example.applectureone.data.local.model.ArticleEntity
 import com.example.applectureone.domain.model.ArticleModel
 
 class ArticlesUseCase(private val context: Context) {

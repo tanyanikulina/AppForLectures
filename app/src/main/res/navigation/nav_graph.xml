@@ -19,6 +19,9 @@
         <action
             android:id="@+id/toSettingsFragment"
             app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/toPermissions"
+            app:destination="@id/permissionsFragment" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
@@ -47,4 +50,9 @@
         android:name="com.example.applectureone.presentation.settings.SettingsFragment"
         android:label="settings_fragment"
         tools:layout="@layout/settings_fragment" />
+    <fragment
+        android:id="@+id/permissionsFragment"
+        android:name="com.example.applectureone.presentation.permissions.PermissionsFragment"
+        android:label="fragment_permissions"
+        tools:layout="@layout/fragment_permissions" />
 </navigation>

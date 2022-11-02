@@ -17,29 +17,40 @@ class SettingsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = SettingsFragmentBinding.inflate(layoutInflater, container, false)
-        return binding.root
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(
             this, SettingsViewModelFactory(
                 requireContext().applicationContext
             )
         ).get(SettingsViewModel::class.java)
+        binding = SettingsFragmentBinding.inflate(layoutInflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnSave.setOnClickListener {
-            viewModel.saveUserName(binding.et.text.toString())
-        }
-        binding.btnRead.setOnClickListener {
-            binding.tv.text = viewModel.getUserName()
-        }
+        with(binding) {
+            btnSave.setOnClickListener {
+                viewModel.saveUserName(et.text.toString())
+            }
+            btnRead.setOnClickListener {
+                tv.text = viewModel.getUserName()
+            }
 
+            btnSaveToDb.setOnClickListener {
+                val first = etFirst.text.toString()
+                val last = etLast.text.toString()
+                viewModel.saveToDb(first, last)
+
+            }
+            btnReadFromDb.setOnClickListener {
+                viewModel.readFromDb()
+            }
+            viewModel.userDataList.observe(viewLifecycleOwner) {
+                tvDb.text = it.toString()
+            }
+
+        }
 
     }
 

@@ -2,7 +2,7 @@ package com.example.applectureone.data
 
 import android.content.Context
 import com.example.applectureone.data.local.SharedPrefs
-import com.example.applectureone.data.model.ArticleEntity
+import com.example.applectureone.data.local.model.ArticleEntity
 import kotlinx.coroutines.delay
 
 class ArticleRepository(private val context: Context) {

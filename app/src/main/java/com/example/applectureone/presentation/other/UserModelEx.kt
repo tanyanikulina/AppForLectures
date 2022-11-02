@@ -1,10 +1,10 @@
-package com.example.applectureone
+package com.example.applectureone.presentation.other
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class UserModel(
+data class UserModelEx(
     val name: String,
     var age: Int? = null,
 ) : Parcelable {

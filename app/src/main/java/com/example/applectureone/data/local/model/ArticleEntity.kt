@@ -1,4 +1,4 @@
-package com.example.applectureone.data.model
+package com.example.applectureone.data.local.model
 
 data class ArticleEntity(
     val id: Long,

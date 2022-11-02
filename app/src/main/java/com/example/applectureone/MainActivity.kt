@@ -8,6 +8,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doAfterTextChanged
 import com.example.applectureone.databinding.ActivityMainBinding
+import com.example.applectureone.presentation.other.SecondActivity
+import com.example.applectureone.presentation.other.UserModelEx
 
 
 class MainActivity : AppCompatActivity() {
@@ -37,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.button.setOnClickListener {
 
-            val model = UserModel("James")
+            val model = UserModelEx("James")
 
             val myInt = model.multiply(3, 7)
 

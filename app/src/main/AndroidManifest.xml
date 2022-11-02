@@ -3,8 +3,7 @@
     package="com.example.applectureone">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -16,7 +15,7 @@
         android:theme="@style/Theme.AppLectureOne">
 
         <activity
-            android:name=".SecondActivity"
+            android:name=".presentation.other.SecondActivity"
             android:exported="false" />
 
         <activity
