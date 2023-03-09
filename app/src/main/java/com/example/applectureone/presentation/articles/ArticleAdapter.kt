@@ -7,7 +7,7 @@ import com.example.applectureone.databinding.ItemMytextBinding
 import com.example.applectureone.domain.model.ArticleModel
 
 class ArticleAdapter(
-    val onClick: (text: String) -> Unit
+    val onClick: (model: ArticleModel, position: Int) -> Unit
 ) : RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder>() {
 
     val list = ArrayList<ArticleModel>()
@@ -32,16 +32,15 @@ class ArticleAdapter(
         return list.size
     }
 
-    inner class ArticleViewHolder(
-        val binding: ItemMytextBinding
-    ) : RecyclerView.ViewHolder(binding.root) {
+    inner class ArticleViewHolder(val binding: ItemMytextBinding) :
+        RecyclerView.ViewHolder(binding.root) {
 
         fun bindItem(model: ArticleModel, position: Int) {
             binding.tvTitle.text = model.title
             binding.tvDesc.text = model.description
 
             binding.btn.setOnClickListener {
-                onClick("Clicked: $position")
+                onClick(model, position)
             }
         }
 

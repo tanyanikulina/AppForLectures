@@ -33,6 +33,7 @@ class SecondFragment : Fragment() {
         // put your code here
         val tv = view.findViewById<TextView>(R.id.tvSecond)
         tv.text = args.mystr
+        args.model
 
     }
 }

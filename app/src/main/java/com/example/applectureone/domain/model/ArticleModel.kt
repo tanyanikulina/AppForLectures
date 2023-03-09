@@ -1,10 +1,14 @@
 package com.example.applectureone.domain.model
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class ArticleModel(
     val id: Long,
     val title: String,
     val description: String,
-) {
+) : Parcelable {
 
     companion object {
 
@@ -45,7 +49,6 @@ data class ArticleModel(
 
 
     }
-
 
 }
 

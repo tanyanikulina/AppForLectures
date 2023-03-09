@@ -34,6 +34,9 @@
         <action
             android:id="@+id/action_secondFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
+        <argument
+            android:name="model"
+            app:argType="com.example.applectureone.domain.model.ArticleModel" />
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"

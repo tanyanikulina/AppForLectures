@@ -8,14 +8,13 @@
         android:topLeftRadius="12dp"
         android:topRightRadius="12dp" />
 
+    <solid android:color="@color/teal_700" />
+
     <gradient
         android:angle="45"
         android:centerColor="@color/white"
         android:endColor="@color/black"
         android:startColor="@color/my_color_main" />
-
-
-    <solid android:color="@color/teal_700" />
 
 
 </shape>

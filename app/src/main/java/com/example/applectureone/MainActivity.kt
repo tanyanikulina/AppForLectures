@@ -11,7 +11,6 @@ import com.example.applectureone.databinding.ActivityMainBinding
 import com.example.applectureone.presentation.other.SecondActivity
 import com.example.applectureone.presentation.other.UserModelEx
 
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
