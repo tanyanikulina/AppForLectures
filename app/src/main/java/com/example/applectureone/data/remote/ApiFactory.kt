@@ -9,7 +9,8 @@ object ApiFactory {
 
     const val BASE_URL = "https://api.openweathermap.org/data/2.5/"
 
-    val weatherApi: WeatherApi = createRetrofit().create(WeatherApi::class.java)
+    private val retrofit = createRetrofit()
+    val weatherApi: WeatherApi = retrofit.create(WeatherApi::class.java)
 
     private fun createRetrofit(): Retrofit {
 
