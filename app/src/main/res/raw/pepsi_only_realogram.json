@@ -1,0 +1,92 @@
+[
+  {
+    "skuId": 7501011167735,
+    "name": "FRITURAS NACHOS DORITOS SABRITAS 223 GRS",
+    "shelf": 1,
+    "rackId": 0,
+    "shelfXIndex": 0,
+    "shelfYIndex": 0,
+    "isPepsi": true
+  },
+  {
+    "skuId": 7501011154865,
+    "name": "PAKETAXO BOTANERO 270 GR",
+    "shelf": 0,
+    "rackId": 0,
+    "order": 4,
+    "supplier": "PEPSICO",
+    "segment": "MEZCLAS",
+    "brand": "PAKETAXO",
+    "category": "BOTANAS",
+    "flavor": "-",
+    "shelfXIndex": 0,
+    "shelfYIndex": 0,
+    "isPepsi": true
+  },
+  {
+    "skuId": 7501011167735,
+    "name": "FRITURAS NACHOS DORITOS SABRITAS 223 GRS",
+    "shelf": 1,
+    "rackId": 0,
+    "shelfXIndex": 1,
+    "shelfYIndex": 0,
+    "isPepsi": true
+  },
+  {
+    "skuId": 7501011135581,
+    "name": "TOTOPOS XTRA FLAMIN HOT TOSTITOS SABRITAS 240 GRS",
+    "shelf": 0,
+    "rackId": 0,
+    "shelfXIndex": 3,
+    "shelfYIndex": 0,
+    "isPepsi": true
+  },
+  {
+    "skuId": 7501011167728,
+    "name": "FRITURAS TORCIDITOS CHEETOS SABRITAS 255 GRS",
+    "shelf": 1,
+    "rackId": 0,
+    "shelfXIndex": 3,
+    "shelfYIndex": 0,
+    "isPepsi": true
+  },
+  {
+    "skuId": 7501011167728,
+    "name": "FRITURAS TORCIDITOS CHEETOS SABRITAS 255 GRS",
+    "shelf": 1,
+    "rackId": 0,
+    "shelfXIndex": 2,
+    "shelfYIndex": 0,
+    "isPepsi": true
+  },
+  {
+    "skuId": 7501011154865,
+    "name": "PAKETAXO BOTANERO 270 GR",
+    "shelf": 0,
+    "rackId": 0,
+    "order": 4,
+    "supplier": "PEPSICO",
+    "segment": "MEZCLAS",
+    "brand": "PAKETAXO",
+    "category": "BOTANAS",
+    "flavor": "-",
+    "shelfXIndex": 2,
+    "shelfYIndex": 0,
+    "isPepsi": true
+  },
+  {
+    "skuId": 7501011154865,
+    "name": "PAKETAXO BOTANERO 270 GR",
+    "shelf": 0,
+    "rackId": 0,
+    "order": 4,
+    "supplier": "PEPSICO",
+    "segment": "MEZCLAS",
+    "brand": "PAKETAXO",
+    "category": "BOTANAS",
+    "flavor": "-",
+    "shelfXIndex": 1,
+    "shelfYIndex": 0,
+    "isPepsi": true
+  }
+]

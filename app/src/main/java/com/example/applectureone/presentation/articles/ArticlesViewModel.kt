@@ -8,7 +8,6 @@ import androidx.lifecycle.viewModelScope
 import com.example.applectureone.data.WeatherRepository
 import com.example.applectureone.domain.ArticlesUseCase
 import com.example.applectureone.domain.model.ArticleModel
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import java.util.*
 
@@ -47,7 +46,7 @@ class ArticlesViewModel(private val ctx: Context) : ViewModel() {
                 weather.postValue("no weather")
             }
             isLoading.postValue(false)
-            delay(5000)
+//            delay(5000)
         }
 
     }

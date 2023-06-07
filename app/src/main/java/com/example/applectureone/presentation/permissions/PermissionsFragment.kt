@@ -16,6 +16,7 @@ import java.io.File
 class PermissionsFragment : Fragment() {
 
     lateinit var binding: FragmentPermissionsBinding
+    val fileName = "filename.txt"
 
     private val requestPermissionLauncher =
         registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted: Boolean ->
@@ -25,8 +26,6 @@ class PermissionsFragment : Fragment() {
                 Toast.makeText(requireContext(), "Denied", Toast.LENGTH_SHORT).show()
             }
         }
-
-    val fileName = "filename.txt"
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

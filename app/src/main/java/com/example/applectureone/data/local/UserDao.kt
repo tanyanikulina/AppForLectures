@@ -21,8 +21,14 @@ interface UserDao {
     )
     suspend fun findByName(first: String, last: String): UserEntity
 
+    @Query("SELECT * FROM UserEntity WHERE id LIKE :userId LIMIT 1")
+    suspend fun findUserById(userId: Int): UserEntity
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(vararg users: UserEntity)
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertUser(user: UserEntity)
 
     @Delete
     suspend fun delete(user: UserEntity)

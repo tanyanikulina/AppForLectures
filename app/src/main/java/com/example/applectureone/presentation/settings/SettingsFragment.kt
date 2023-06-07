@@ -18,9 +18,8 @@ class SettingsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         viewModel = ViewModelProvider(
-            this, SettingsViewModelFactory(
-                requireContext().applicationContext
-            )
+            this,
+            SettingsViewModelFactory(requireContext().applicationContext)
         ).get(SettingsViewModel::class.java)
         binding = SettingsFragmentBinding.inflate(layoutInflater, container, false)
         return binding.root
