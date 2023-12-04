@@ -4,14 +4,16 @@ import android.content.Context
 import androidx.room.Room
 import com.example.applectureone.data.ArticleRepository
 import com.example.applectureone.data.local.AppDatabase
+import com.example.applectureone.data.local.UserDao
 import com.example.applectureone.data.local.model.UserEntity
 import com.example.applectureone.domain.model.UserModel
 
 class UserUseCase(private val context: Context) {
 
     private val repo = ArticleRepository(context)
-    private val db = Room.databaseBuilder(context, AppDatabase::class.java, "db-name").build()
-    private val dao = db.userDao()
+    private val db: AppDatabase =
+        Room.databaseBuilder(context, AppDatabase::class.java, "db-name").build()
+    private val dao: UserDao = db.userDao()
 
     fun saveUsername(string: String) {
         repo.setUserName(string)

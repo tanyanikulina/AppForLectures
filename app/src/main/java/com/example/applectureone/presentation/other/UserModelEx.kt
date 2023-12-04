@@ -19,3 +19,10 @@ data class UserModelEx(
 
 
 }
+
+
+@Parcelize
+data class Cat(
+    val name: String,
+    var age: Int? = null,
+) : Parcelable

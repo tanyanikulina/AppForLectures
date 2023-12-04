@@ -17,6 +17,7 @@ class SettingsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+//        viewModel = ViewModelProvider(this).get(SettingsViewModel::class.java)
         viewModel = ViewModelProvider(
             this,
             SettingsViewModelFactory(requireContext().applicationContext)
@@ -27,6 +28,14 @@ class SettingsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+//        val path = requireContext().getExternalFilesDirs(null)
+//        val path2 = requireContext().filesDir
+//        val file = File("$path/file.txt")
+//        file.writeText("jkl")
+//        file.readText()
+//
+
 
         with(binding) {
             btnSave.setOnClickListener {

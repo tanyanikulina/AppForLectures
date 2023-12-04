@@ -10,7 +10,7 @@ class ArticleAdapter(
     val onClick: (model: ArticleModel, position: Int) -> Unit
 ) : RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder>() {
 
-    val list = ArrayList<ArticleModel>()
+    private val list = ArrayList<ArticleModel>()
 
     fun setData(newList: List<ArticleModel>) {
         list.clear()

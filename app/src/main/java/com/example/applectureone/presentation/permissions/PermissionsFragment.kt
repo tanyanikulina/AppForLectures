@@ -44,15 +44,16 @@ class PermissionsFragment : Fragment() {
 
             btnSave.setOnClickListener {
                 val text = et.text.toString()
-
-                val file = File(requireActivity().getExternalFilesDir(null), fileName)
+                val path = requireActivity().getExternalFilesDir(null)
+                val file = File(path, fileName)
                 file.writeText(text)
 
                 Toast.makeText(requireContext(), "Saved", Toast.LENGTH_SHORT).show()
             }
 
             btnRead.setOnClickListener {
-                val file = File(requireActivity().getExternalFilesDir(null), fileName)
+                val path = requireActivity().getExternalFilesDir(null)
+                val file = File(path, fileName)
                 val text: String = file.readText()
 
                 tv.text = text
